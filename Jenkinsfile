@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('SCM') {
       steps {
-        git branch: 'webhookdemo', url: ''
+        git branch: 'webhookdemo', url: 'https://github.com/AbishekM001/Weather-App.git'
       }
     }
     stage("Build and Unit Test") {
